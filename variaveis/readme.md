@@ -1,7 +1,3 @@
-# 📘 Guia de Estudos em Go
-
-Bem-vindo ao repositório de estudos em Go! Aqui você encontra os principais conceitos da linguagem organizados de forma simples e prática. 👨‍💻
-
 ## 🧭 Navegação
 
 - [📌 Tipos e Variáveis](#-tipos-e-variáveis-em-go)
