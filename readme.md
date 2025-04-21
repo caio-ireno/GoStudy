@@ -8,10 +8,12 @@ Bem-vindo ao **GoStudy**, um repositório pessoal com anotações e exemplos pr�
 
 ## 📂 Estrutura do Repositório
 
-| Pasta                                  | Descrição                                                            |
-| -------------------------------------- | -------------------------------------------------------------------- |
-| [`Install-Modules`](./Install-Modules) | Como inicializar módulos Go, instalar dependências e rodar arquivos. |
-| [`variaveis`](./variaveis)             | Tipos, variáveis, inferência, funções e uso de pacotes em Go.        |
+| Pasta                                    | Descrição                                                                 |
+| ---------------------------------------- | ------------------------------------------------------------------------- |
+| [`Install-Modules`](./Install-Modules)   | Como inicializar módulos Go, instalar dependências e rodar arquivos.      |
+| [`variaveis`](./variaveis)               | Tipos, variáveis, inferência, funções básicas e uso de pacotes em Go.     |
+| [`tratamento-erros`](./tratamento-erros) | Técnicas para tratar erros em Go usando `error`, `nil`, `log.Fatal`.      |
+| [`functions`](./functions)               | Funções em diferentes formatos, variádicas, múltiplos retornos e métodos. |
 
 ---
 
