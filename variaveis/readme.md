@@ -3,6 +3,7 @@
 - [📌 Tipos e Variáveis](#-tipos-e-variáveis-em-go)
 - [🧩 Funções e Uso de Pacotes](#-funções-e-uso-de-pacotes-em-go)
 - [🚪 Exportação com Letra Maiúscula](#-exportação-de-funções-e-variáveis-em-go)
+- [💬 Comentários e Documentação](#-comentários-e-documentação-em-go)
 
 ---
 
@@ -197,11 +198,14 @@ var InternalVar string = "visível"
 var internalVar string = "interno"
 ```
 
+Não somente para variaveis, para métodos tambem.
+
 No `main.go`:
 
 ```go
 fmt.Println(matematica.InternalVar)   // ✅ funciona
 fmt.Println(matematica.internalVar)   // ❌ erro! não exportado
+
 ```
 
 ---
@@ -218,4 +222,45 @@ func GetInternalVar() string {
 }
 ```
 
+## 💬 Comentários e Documentação em Go
+
+Go utiliza comentários para documentação, seguindo o padrão do `godoc`, a ferramenta oficial de documentação da linguagem.
+
+### ✍️ Tipos de Comentários
+
+- `//` Comentário de linha única (mais comum)
+- `/* ... */` Comentário de múltiplas linhas (menos usado)
+
+```go
+// Isso é um comentário de linha única
+
+/*
+   Comentário de múltiplas linhas
+   Não é comum, mas é permitido.
+*/
+```
+
 ---
+
+### 📘 Comentários para Funções e Pacotes
+
+Go segue uma **convenção importante**: comentários devem começar com o nome da função, variável ou tipo que estão documentando. Isso permite que o `godoc` gere uma documentação clara e precisa.
+
+```go
+// Soma retorna a soma de dois inteiros.
+func Soma(a, b int) int {
+	return a + b
+}
+```
+
+> ✅ Comentários assim ajudam ferramentas como `godoc` e também melhoram a leitura do código para outros desenvolvedores.
+
+### ✅ Boas práticas
+
+- Use para métodos exportados
+
+---
+
+### 🔗 Links Úteis
+
+- [📚 Documentação oficial do Go](https://go.dev/doc/)
